@@ -105,6 +105,7 @@ def counter_words_in_string(sentence):
 
 
 
+
 #counter_spaces_split("The best picture I've ever seen")
 
 #counter_spaces_recursion - подсчитывает колличество пробелов в заданной строке
