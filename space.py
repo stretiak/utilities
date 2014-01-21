@@ -50,7 +50,7 @@ def counter_spaces(case):
 #counter_spaces_for - подсчитывает колличество пробелов в заданной строке
 def counter_spaces_for(sentence):
     index_gaps = []
-    for j in range(0,len(sentence),1):
+    for j in range(0, len(sentence), 1):
         n = sentence.find(" ", j, len(sentence))
         if n == j:
             index_gaps.append(n)
@@ -85,7 +85,7 @@ def counter_spaces_split(sentence):
 def counter_spaces_split_print(sentence):
     n = sentence.strip().split(" ")
     for v in n:
-        print "<{}>".format(v)
+        print( "{}".format(v))
 
     n = filter(lambda x: x != '', n)
     return len(n)-1
@@ -123,10 +123,11 @@ def _counter_spaces_recursion(sentence, count):
 def counter_spaces_recursion(sentence, count=0):
     n = sentence.find(" ", 1, len(sentence))
     if n == -1:
+        print "return %s" % count
         return count
     return counter_spaces_recursion(sentence[n:], count + 1)
 
-#counter_spaces_recursion("The best picture I've ever seen", count=0
+counter_spaces_recursion("The best picture I've ever seen", count=0)
 
 
 #file_gaps - подсчитывает колличество пробелов в заданном файле
@@ -135,7 +136,7 @@ def file_gaps(name_file):
     print("Колличество пробелов в файле: ", len(gaps_list))
     return len(gaps_list)
 
-#file_gaps("some_name.txt")
+file_gaps("some_name.txt")
 
 
 if __name__ == '__main__':
