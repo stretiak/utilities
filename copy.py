@@ -10,6 +10,7 @@ def  increase(sentence, number_of_items):
 #HE-heeeeeee
 
 #increase("The best picture I've ever seen (copy)", 5)
+#HHHHHHHHHH
 
 def find_increase(sentence):
     first_copy = sentence.find("copy",1,len(sentence))
